@@ -1,6 +1,6 @@
 {
     "name": "easymde",
-    "version": "2.9.3",
+    "version": "2.9.4",
     "description": "A simple, beautiful, and embeddable JavaScript Markdown editor that easy to use. Features include autosaving and spell checking.",
     "files": [
         "dist/**/*",
@@ -19,7 +19,7 @@
     "license": "MIT",
     "author": "Jeroen Akkerman",
     "dependencies": {
-        "codemirror": "github:ge-lx/codemirror#5.52.3",
+        "codemirror": "github:zenkit/codemirror#5.52.3",
         "codemirror-spell-checker": "1.1.2",
         "marked": "^0.8.0"
     },
