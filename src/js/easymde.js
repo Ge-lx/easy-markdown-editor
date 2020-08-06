@@ -2645,4 +2645,8 @@ EasyMDE.prototype.toTextArea = function () {
     }
 };
 
+EasyMDE.Renderer = function () {
+    return new marked.Renderer();
+};
+
 module.exports = EasyMDE;
