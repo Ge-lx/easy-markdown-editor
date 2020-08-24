@@ -1551,7 +1551,7 @@ function EasyMDE(options) {
             if (!styleSheets[i].href)
                 continue;
 
-            if (styleSheets[i].href.indexOf('//maxcdn.bootstrapcdn.com/font-awesome/') > -1) {
+            if (styleSheets[i].href.indexOf('font-awesome') > -1) {
                 autoDownloadFA = false;
             }
         }
@@ -1560,7 +1560,7 @@ function EasyMDE(options) {
     if (autoDownloadFA) {
         var link = document.createElement('link');
         link.rel = 'stylesheet';
-        link.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css';
+        link.href = options.urlFontAwesome ? options.urlFontAwesome : 'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css';
         document.getElementsByTagName('head')[0].appendChild(link);
     }
 
